@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/gitSearchMainFragment">
+
+
+    <fragment
+        android:id="@+id/gitSearchMainFragment"
+        android:name="com.rtllabs.githubappexplore.gitsearchmodule.ui.searchList.GitSearchMainFragment"
+        android:label="fragment_gitsearch_main"
+        tools:layout="@layout/fragment_gitsearch_main" >
+        <action
+            android:id="@+id/action_gitSearchMainFragment_to_repoItemDetailFragment2"
+            app:destination="@id/repoItemDetailFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/repoItemDetailFragment2"
+        android:name="com.rtllabs.githubappexplore.gitsearchmodule.ui.searchItemDetails.RepoItemDetailFragment"
+        android:label="fragment_repo_item_detail"
+        tools:layout="@layout/fragment_repo_item_detail" >
+        <action
+            android:id="@+id/action_repoItemDetailFragment2_to_gitSearchMainFragment"
+            app:destination="@id/gitSearchMainFragment" />
+    </fragment>
+</navigation>
