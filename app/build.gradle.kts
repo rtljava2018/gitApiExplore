@@ -18,7 +18,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         buildConfigField("String", "githubAPI", "\"https://api.github.com/\"")
-        buildConfigField("String", "githubToken", "\"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\"")
+        buildConfigField("String", "githubToken", "\"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\"")
     }
     buildFeatures {
         buildConfig = true
